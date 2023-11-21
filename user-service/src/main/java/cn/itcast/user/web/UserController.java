@@ -32,6 +32,7 @@ public class UserController {
     public PatternProperties properties(){
         return properties;
     }
+    //我修改了一行数据
     @GetMapping("now")
     public String now(){
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern(properties.getDateformat()));
